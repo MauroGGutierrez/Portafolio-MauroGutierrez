@@ -1,0 +1,257 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*Globales*/
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  height: 6rem;
+  background: #141414;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.boton span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+/* header */
+.hero {
+  width: 100%;
+  height: 102vh;
+  position: relative;
+  background-image: url(../img/pexels-cottonbro-5483071.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 43, 43, 0.6);
+  background-size: cover;
+  /* clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); */
+}
+
+@media (max-width: 375px) {
+  .hero {
+    width: 300%;
+    height: 300vh;
+    position: relative;
+    background-image: url(../img/pexels-cottonbro-5483071.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 43, 43, 0.6);
+    background-size: cover;
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); */
+  }
+}
+
+.foto-header {
+  position: absolute;
+  margin-top: -2rem;
+  height: 20rem;
+  width: 100%;
+}
+
+.todo-header a {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.todo-header i {
+  color: rgb(255, 255, 255);
+  font-size: 6rem;
+  margin-top: 1rem;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 2rem;
+  height: 12rem;
+}
+
+.nav-derecha {
+  display: flex;
+  align-items: center;
+  padding-right: 4rem;
+  margin-top: -3rem;
+  gap: 2rem;
+}
+
+.nav-derecha a {
+  background: #3b3b3b;
+  padding: 0.5rem 1rem 0 1rem;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+}
+.nav-derecha a:hover {
+  background: #3b3b3b;
+  color: rgb(255, 113, 137);
+  border-bottom: 0.6rem solid rgb(255, 44, 107);
+}
+
+/* hero */
+
+.centro {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 4rem;
+  margin-left: 10rem;
+}
+
+.centro img {
+  width: 40rem;
+  height: 40rem;
+  margin-top: 3rem;
+}
+
+.textos {
+  color: #fff;
+  text-align: center;
+  margin-top: -3rem;
+  margin-right: 6rem;
+}
+
+.bienvenido {
+  margin-bottom: -0.2rem;
+  font-size: 3.2rem;
+}
+
+.textos hr {
+  width: 55rem;
+  margin-bottom: -1rem;
+}
+
+.textos h1 {
+  font-size: 6rem;
+}
+
+.textos p {
+  margin-top: -2rem;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+/* .textos a {
+  color: rgb(255, 255, 255);
+  background: rgb(255, 31, 68);
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+} */
+
+.boton.uno::after {
+  content: "";
+  width: 130%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: calc(-100% - 80px);
+  border-bottom: 6rem solid rgb(255, 48, 83);
+  border-right: 6rem solid transparent;
+  transition: 0.3s ease-in-out all;
+}
+
+.boton.uno:hover::after {
+  left: 0;
+}
+
+.textos a {
+  color: #fff;
+}
+
+/* footer */
+
+.footer {
+  margin-top: -1.6rem;
+  width: 100%;
+  height: 15rem;
+  background: rgb(32, 32, 32);
+  padding-top: 2rem;
+}
+
+.bajo-foot {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(104, 104, 104);
+  padding-inline: 4rem;
+}
+
+.bajo-foot i {
+  font-size: 4rem;
+  padding-top: 2rem;
+}
+
+.bajo-foot h3 {
+  font-size: 2rem;
+  margin-top: -0.1rem;
+}
+
+.bajo-foot p {
+  font-size: 2rem;
+  margin-top: -2rem;
+}
