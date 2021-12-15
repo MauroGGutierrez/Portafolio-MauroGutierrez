@@ -52,7 +52,7 @@ a {
   margin-bottom: 1rem;
 }
 
-.boton span {
+.boton a {
   position: relative;
   z-index: 2;
   transition: 0.3s ease all;
@@ -78,7 +78,7 @@ a {
   overflow: hidden;
 }
 
-.boton span {
+.boton a {
   position: relative;
   z-index: 2;
   transition: 0.3s ease all;
@@ -231,7 +231,7 @@ body::before {
 }
 }
 
-.todo a {
+.todo .sobremi {
   display: flex;
   color: rgb(255, 52, 86);
   justify-content: center;
@@ -251,7 +251,7 @@ body::before {
 }
 
 @media (min-width: 375px) {
-  .todo a {
+  .todo .sobremi {
   display: flex;
   color: rgb(255, 52, 86);
   justify-content: center;
@@ -373,7 +373,7 @@ h3 {
   background: rgb(250, 27, 94);
 } */
 
-.boton.dos span {
+.boton.dos a {
   transition: 0.4s ease-in-out all;
   position: absolute;
   left: 20%;
@@ -402,15 +402,16 @@ h3 {
   opacity: 1;
 }
 
-.boton.dos:hover span {
+.boton.dos:hover a {
   left: 2rem;
 }
 
 @media (min-width: 375px) {
-  .boton.dos span {
+  .boton.dos a {
   transition: 0.4s ease-in-out all;
   position: absolute;
   left: 20%;
+  color: #fff;
 }
 .boton.dos .icono {
   display: flex;
@@ -436,7 +437,7 @@ h3 {
   opacity: 1;
 }
 
-.boton.dos:hover span {
+.boton.dos:hover a {
   left: 2rem;
 }
 }
